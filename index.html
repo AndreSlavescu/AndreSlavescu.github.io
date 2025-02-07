@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Slavescu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+            background-color: #f5f0e1;
+            color: #3e2723;
+            line-height: 1.6;
+            margin: 0;
+        }
+        header {
+            background-color: #d7ccc8;
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #bcaaa4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            background: #fff3e0;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 1rem;
+        }
+        .tile {
+            background: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .tile:hover {
+            transform: translateY(-2px);
+        }
+        .tile h3 {
+            margin-top: 0;
+        }
+        .link {
+            color: #795548;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .experience-tile {
+            display: flex;
+            flex-direction: column;
+        }
+        .experience-tile p {
+            margin: 0.5rem 0 0 0;
+        }
+        .experience-tile h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-2xl">Andre Slavescu</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2 class="text-xl">About Me</h2>
+            <div class="tile">
+                <p>Computer Science student at the University of Waterloo, focusing on Machine Learning Systems and ML Frameworks.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="text-xl">Education</h2>
+            <div class="tile">
+                <p>Computer Science @ University of Waterloo</p>
+                <p>September 2021 - April 2026</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="text-xl">Experience</h2>
+            <div class="tile experience-tile">
+                <h3 class="text-lg">Cerebras Systems - Machine Learning Engineer Intern</h3>
+                <p>January 2025 - April 2025</p>
+            </div>
+            <div class="tile experience-tile">
+                <h3 class="text-lg">Adrenaline - Research Scientist Intern</h3>
+                <p>October 2023 - December 2023</p>
+            </div>
+            <div class="tile experience-tile">
+                <h3 class="text-lg">You.com - Machine Learning Engineer Intern</h3>
+                <p>May 2023 - August 2023</p>
+            </div>
+            <div class="tile experience-tile">
+                <h3 class="text-lg">CentML - Machine Learning Systems Engineer Intern</h3>
+                <p>January 2023 - April 2023</p>
+            </div>
+            <div class="tile experience-tile">
+                <h3 class="text-lg">Amazon Web Services - Research Engineer Intern</h3>
+                <p>May 2022 - July 2022</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="text-xl">Projects</h2>
+            <div class="tile">
+                <h3 class="text-lg"><a class="link" href="https://github.com/AndreSlavescu/BlazeTorch" target="_blank">BlazeTorch</a></h3>
+                <p>A JIT compiler torch backend optimizing torch.fx compute graphs at runtime.</p>
+            </div>
+            <div class="tile">
+                <h3 class="text-lg"><a class="link" href="https://github.com/DhruvBhatia0/llama_fast" target="_blank">FastLlama</a></h3>
+                <p>An inference pipeline for Llama3 profiling custom fused CUDA kernels.</p>
+            </div>
+            <div class="tile">
+                <h3 class="text-lg"><a class="link" href="https://github.com/AndreSlavescu/EasyAI" target="_blank">EasyAI</a></h3>
+                <p>A project focused on simplifying AI integration.</p>
+            </div>
+            <div class="tile">
+                <h3 class="text-lg"><a class="link" href="https://github.com/AndreSlavescu/Hardware_Implemented_Neural_Network" target="_blank">Hardware Implemented Neural Network</a></h3>
+                <p>Exploring neural network implementations on hardware.</p>
+            </div>
+            <div class="tile">
+                <h3 class="text-lg"><a class="link" href="https://github.com/linkedin/Liger-Kernel" target="_blank">Liger Kernel</a></h3>
+                <p>Contributed to the development of the Liger Kernel project.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="text-xl">Publications</h2>
+            <div class="tile">
+                <ul class="list-disc pl-5">
+                    <li><a class="link" href="https://arxiv.org/abs/2408.15425" target="_blank">Fast and modular autonomy software for autonomous racing vehicles</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="text-xl">Contact</h2>
+            <div class="tile">
+                <p>Email: <a class="link" href="mailto:andre.slavescu@gmail.com">andre.slavescu@gmail.com</a></p>
+                <p>Phone: 647-636-9454</p>
+                <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/andre-slavescu/" target="_blank">LinkedIn</a></p>
+                <p>GitHub: <a class="link" href="https://github.com/AndreSlavescu" target="_blank">GitHub</a></p>
+                <p>Google Scholar: <a class="link" href="https://scholar.google.ca/citations?user=IINAYX4AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
