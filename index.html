@@ -66,6 +66,27 @@
         .experience-tile h3 {
             margin: 0;
         }
+        .publication-tile {
+            display: flex;
+            flex-direction: column;
+        }
+        .publication-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .publication-title {
+            margin-bottom: 0.5rem;
+        }
+        .publication-meta {
+            font-size: 0.8rem;
+            color: #795548;
+        }
+        .publication-year {
+            margin-right: 0.5rem;
+        }
+        .publication-venue {
+            margin-left: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -76,13 +97,28 @@
         <div class="section">
             <h2 class="text-xl">About Me</h2>
             <div class="tile">
-                <p>Computer Science student at the University of Waterloo, focusing on Machine Learning Systems, Machine Learning Frameworks, and Machine Learning Compilers.</p>
+                <h3 class="text-lg">Research & Programming Interests</h3>
+                <p>Computer Science student at the University of Waterloo, focusing on:</p>
+                <ul>
+                    <li>Optimizers for Deep Learning</li>
+                    <li>Machine Learning Compilers</li>
+                    <li>Machine Learning Frameworks</li>
+                    <li>GPU Kernel Development</li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h3 class="text-lg">Personal Interests</h3>
+                <p>Outside of programming, I enjoy:</p>
+                <ul>
+                    <li>Traveling and exploring new places</li>
+                    <li>Discovering and experiencing cuisines from around the world</li>
+                </ul>
             </div>
         </div>
         <div class="section">
             <h2 class="text-xl">Education</h2>
             <div class="tile">
-                <p>Computer Science @ University of Waterloo</p>
+                <h3 class="text-lg">Computer Science @ University of Waterloo</h3>
                 <p>September 2021 - April 2026</p>
             </div>
         </div>
@@ -134,20 +170,32 @@
         </div>
         <div class="section">
             <h2 class="text-xl">Publications</h2>
-            <div class="tile">
-                <ul class="list-disc pl-5">
-                    <li><a class="link" href="https://arxiv.org/abs/2408.15425" target="_blank">Fast and modular autonomy software for autonomous racing vehicles</a></li>
-                </ul>
+            <div class="tile publication-tile">
+                <div class="publication-info">
+                    <h3 class="publication-title">
+                        <a class="link" href="https://arxiv.org/abs/2408.15425" target="_blank">
+                            Fast and Modular Autonomy Software for Autonomous Racing Vehicles
+                        </a>
+                    </h3>
+                    <p class="publication-meta">
+                        <span class="publication-year">2024</span>
+                        <span class="publication-venue">Journal of Field Robotics (JFR)</span>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="section">
-            <h2 class="text-xl">Contact</h2>
-            <div class="tile">
-                <p>Email: <a class="link" href="mailto:andre.slavescu@gmail.com">andre.slavescu@gmail.com</a></p>
-                <p>Phone: 647-636-9454</p>
-                <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/andre-slavescu/" target="_blank">LinkedIn</a></p>
-                <p>GitHub: <a class="link" href="https://github.com/AndreSlavescu" target="_blank">GitHub</a></p>
-                <p>Google Scholar: <a class="link" href="https://scholar.google.ca/citations?user=IINAYX4AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+            <h2 class="text-xl text-center">Contact</h2>
+            <div class="tile text-center">
+                <p class="text-center" style="display: flex; justify-content: center; gap: 1rem;">
+                    <a class="link" href="mailto:andre.slavescu@gmail.com">Email</a>
+                    <span>|</span>
+                    <a class="link" href="https://www.linkedin.com/in/andre-slavescu/" target="_blank">LinkedIn</a>
+                    <span>|</span>
+                    <a class="link" href="https://github.com/AndreSlavescu" target="_blank">GitHub</a>
+                    <span>|</span>
+                    <a class="link" href="https://scholar.google.ca/citations?user=IINAYX4AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                </p>
             </div>
         </div>
     </div>
